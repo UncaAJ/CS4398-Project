@@ -15,9 +15,17 @@ public class PaymentInfo {
     }
 
     // Method definitions (to be implemented)
-    public void deposit(double amount) {}
-    public void withdraw(double amount) {}
-    public void refund(double amount) {}
+    public void deposit(double amount) {
+        this.balance += amount;
+    }
+    public void withdraw(double amount) {
+        if (this.balance >= amount) {
+            this.balance -= amount;
+        }
+    }
+    public void refund(double amount) {
+        this.balance += amount;
+    }
 
     // Getters and Setters
     public String getAccountNumber() { return accountNumber; }
