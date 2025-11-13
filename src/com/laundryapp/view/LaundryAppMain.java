@@ -1,3 +1,9 @@
+package com.laundryapp.view;
+
+import com.laundryapp.model.*;
+import com.laundryapp.service.*;
+import com.laundryapp.controller.*;
+
 import java.util.ArrayList;
 import java.util.List;
 

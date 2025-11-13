@@ -1,3 +1,6 @@
+package com.laundryapp.service;
+import com.laundryapp.model.*;
+
 public class PaymentSystem {
 
     // Method definitions (to be implemented)

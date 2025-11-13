@@ -1,3 +1,5 @@
+package com.laundryapp.model;
+
 public class PaymentInfo {
     private String accountNumber;
     private String bankName;

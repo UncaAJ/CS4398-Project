@@ -1,3 +1,5 @@
+package com.laundryapp.model;
+
 // Enum for Job Status
 public enum JobStatus {
     PENDING,

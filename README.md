@@ -2,6 +2,31 @@
 
 Members: Segundo Sanchez, Gentry Rabe, Ricky Mosqueda-Torres
 
+Package Structure:
+com.laundryapp.model
+    - UserAccount.java
+    - Employee.java
+    - Job.java
+    - PaymentInfo.java
+    - JobStatus.java
+
+com.laundryapp.service
+    - PaymentSystem.java
+    - RatingSystem.java
+
+com.laundryapp.controller
+    - UserController.java
+    - EmployeeController.java
+    - JobController.java
+
+com.laundryapp.view
+    - LaundryAppMain.java
+
+com.laundryapp.util
+    - ValidationUtils.java
+    - NotificationUtils.java
+
+
 Class Diagram:
 <<Model>> LaundryServiceSystem
  ├── <<Entity>> UserAccount
