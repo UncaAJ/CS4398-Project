@@ -1,3 +1,6 @@
+package com.laundryapp.service;
+import com.laundryapp.model.*;
+
 import java.util.List;
 
 public class RatingSystem {

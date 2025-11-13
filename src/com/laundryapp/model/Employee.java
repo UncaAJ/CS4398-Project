@@ -1,3 +1,5 @@
+package com.laundryapp.model;
+
 import java.util.List;
 
 public class Employee {
