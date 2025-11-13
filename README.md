@@ -22,7 +22,7 @@ com.laundryapp.controller
 com.laundryapp.view
     - LaundryAppMain.java
 
-com.laundryapp.util
+com.laundryapp.util (May be implemented later)
     - ValidationUtils.java
     - NotificationUtils.java
 
