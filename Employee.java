@@ -20,12 +20,40 @@ public class Employee {
     }
 
     // Method definitions (to be implemented)
-    public void register() {}
-    public void acceptJob(Job job) {}
-    public void updateProfile() {}
-    public void blockUser(UserAccount user) {}
-    public void rateUser(UserAccount user, double rating) {}
-    public void updateJobStatus(Job job, JobStatus status) {}
+
+    @Override
+    public String toString() {
+        return "Employee ID: " + employeeId + ", Name: " + name + ", Email: " + email + ", Rating: " + rating;
+    }
+
+    public void register() {
+        System.out.println("Employee " + name + " registered successfully.");
+    }
+
+    public void acceptJob(Job job) {
+        if (acceptedJobs != null) {
+            acceptedJobs.add(job);
+        }
+
+        job.assignEmployee(this);
+        job.updateStatus(JobStatus.ACCEPTED);
+    }
+
+    public void updateProfile() {
+        System.out.println("Employee profile updated for: " + name);
+    }
+
+    public void blockUser(UserAccount user) {
+        System.out.println("Employee " + name + " has blocked user: " + user.getName());
+    }
+
+    public void rateUser(UserAccount user, double rating) {
+        user.setRating(rating);
+    }
+
+    public void updateJobStatus(Job job, JobStatus status) {
+    job.updateStatus(status);
+    }
 
     // Getters and Setters
     public int getEmployeeId() { return employeeId; }
