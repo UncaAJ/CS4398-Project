@@ -19,11 +19,27 @@ public class Job {
     }
 
     // Method definitions (to be implemented)
-    public void assignEmployee(Employee employee) {}
-    public void updateStatus(JobStatus status) {}
-    public void notifyUser() {}
+    public void assignEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+    public void updateStatus(JobStatus newStatus) {
+        this.status = newStatus;
+    }
+
+    public void notifyUser() {
+        System.out.println("User has been notified about job update.");
+    }
+
     public void completeJob() {}
     public void refundUser() {}
+
+    @Override
+    public String toString() {
+    return "Job ID: " + jobId + ", Status: " + status + ", Price: " + price;
+    }
+
+
 
     // Getters and Setters
     public int getJobId() { return jobId; }
